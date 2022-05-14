@@ -2,7 +2,7 @@
 plugins {
     id("com.android.application").version("7.2.0").apply(false)
     id("com.android.library").version("7.2.0").apply(false)
-    id("org.jetbrains.kotlin.android").version("1.6.21").apply(false)
+    id("org.jetbrains.kotlin.android").version("1.6.20").apply(false)
 }
 
 tasks.register("clean").configure {
@@ -11,6 +11,6 @@ tasks.register("clean").configure {
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions {
-        freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+        freeCompilerArgs = freeCompilerArgs + "-opt-in=kotlin.RequiresOptIn"
     }
 }
