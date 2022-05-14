@@ -18,7 +18,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
 
-        resValue("string", "api_key", apiProperties["api_key"] as String)
+        buildConfigField("String", "API_KEY", apiProperties["api_key"] as String)
 
     }
 
