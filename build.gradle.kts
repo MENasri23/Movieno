@@ -5,7 +5,7 @@ plugins {
     id("org.jetbrains.kotlin.android").version("1.6.21").apply(false)
 }
 
-task<Delete>("clean") {
+tasks.register("clean").configure {
     delete(rootProject.buildDir)
 }
 
