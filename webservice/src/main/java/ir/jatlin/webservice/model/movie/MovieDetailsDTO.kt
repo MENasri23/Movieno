@@ -40,7 +40,9 @@ data class MovieDetailsDTO(
     val tagline: String,
     val title: String,
     val video: Boolean,
-    val videos: List<VideoDTO>, // TODO: Define deserializer
+    val videos: List<VideoDTO>,
+    @SerializedName("images")
+    val posters: List<PosterDTO>,
     @SerializedName("vote_average")
     val voteAverage: Double,
     @SerializedName("vote_count")
