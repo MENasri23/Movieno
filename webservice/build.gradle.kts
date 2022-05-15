@@ -4,6 +4,8 @@ import java.util.Properties
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("dagger.hilt.android.plugin")
+    kotlin("kapt")
 }
 
 android {
@@ -51,5 +53,20 @@ fun getProperties(file: String = "local.properties"): Properties {
 }
 
 dependencies {
+
+    // hilt
+    implementation(Libs.Hilt.HILT)
+    kapt(Libs.Hilt.HILT_COMPILER)
+    kapt(Libs.Hilt.ANDROIDX_HILT_COMPILER)
+
+    // okHttp
+    implementation(Libs.OkHttp.OKHTTP3)
+    implementation(Libs.OkHttp.LOGGING_INTERCEPTOR)
+
+    // retrofit
+    implementation(Libs.Retrofit.RETROFIT2)
+    implementation(Libs.Retrofit.GSON_CONVERTER)
+    implementation(Libs.Retrofit.GSON)
+
 
 }

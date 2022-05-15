@@ -107,7 +107,7 @@ object Libs {
     }
 
     object Hilt {
-        private const val version = "2.41"
+        const val version = "2.41"
         private const val androidXCompilerVersion = "1.0.0"
         const val HILT = "com.google.dagger:hilt-android:${version}"
         const val HILT_COMPILER = "com.google.dagger:hilt-compiler:${version}"
