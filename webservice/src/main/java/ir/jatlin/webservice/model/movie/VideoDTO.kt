@@ -4,10 +4,10 @@ import com.google.gson.annotations.SerializedName
 
 data class VideoDTO(
     val id: String,
-    @SerializedName("iso_3166_1")
-    val iso31661: String,
     @SerializedName("iso_639_1")
-    val iso6391: String,
+    val isoLanguage: String,
+    @SerializedName("iso_3166_1")
+    val isoCountryName: String,
     val key: String,
     val name: String,
     val official: Boolean,
