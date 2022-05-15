@@ -7,7 +7,9 @@ import ir.jatlin.webservice.model.production.CountryDTO
 import ir.jatlin.webservice.model.production.SpokenLanguageDTO
 
 data class MovieDetailsDTO(
-    val adult: Boolean,
+    val id: Int,
+    @SerializedName("adult")
+    val isAdult: Boolean,
     @SerializedName("backdrop_path")
     val backdropPath: String,
     @SerializedName("belongs_to_collection")
@@ -15,7 +17,6 @@ data class MovieDetailsDTO(
     val budget: Int,
     val genres: List<GenreDTO>,
     val homepage: String,
-    val id: Int,
     @SerializedName("imdb_id")
     val imdbId: String,
     @SerializedName("original_language")
@@ -39,7 +40,8 @@ data class MovieDetailsDTO(
     val status: String,
     val tagline: String,
     val title: String,
-    val video: Boolean,
+    @SerializedName("video")
+    val isVideo: Boolean,
     val videos: List<VideoDTO>,
     @SerializedName("images")
     val posters: List<PosterDTO>,
