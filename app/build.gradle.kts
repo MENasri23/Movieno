@@ -5,6 +5,33 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+buildscript {
+
+    class CommonAndroidPlugin : Plugin<Project> {
+
+        private val Project.android
+            get() = extensions.getByType(com.android.build.gradle.BaseExtension::class)
+
+
+        override fun apply(project: Project) {
+            with(project) {
+                applyPlugins()
+                android.run {
+                    defaultConfig {
+
+                    }
+                }
+            }
+
+        }
+
+        private fun Project.applyPlugins() {
+//        apply("com.android.library")
+//        apply("org.jetbrains.kotlin.android")
+        }
+    }
+}
+
 android {
     compileSdk = App.COMPILE_SDK
 
