@@ -1,12 +1,17 @@
 package ir.jatlin.webservice.di
 
+import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import ir.jatlin.webservice.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import javax.inject.Singleton
 
+@Module
+@InstallIn(SingletonComponent::class)
 object OkHttpModule {
     private const val API_KEY = BuildConfig.API_KEY
 
