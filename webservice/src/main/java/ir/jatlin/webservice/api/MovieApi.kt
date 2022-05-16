@@ -11,21 +11,23 @@ import retrofit2.http.QueryMap
 interface MovieApi {
 
     @GET(Route.DETAILS)
-    suspend fun getMovieDetails(@Path("id") movieId: Long): MovieDetailsDTO
+    suspend fun getMovieDetails(
+        @Path(PARAMS.MOVIE_ID) movieId: Long
+    ): MovieDetailsDTO
 
     @GET(Route.POPULAR)
-    suspend fun getPopulars(@Query("page") page: Int): MoviesResponse
+    suspend fun getPopulars(@Query(PARAMS.PAGE) page: Int): MoviesResponse
 
     @GET(Route.UPCOMING)
-    suspend fun getUpcoming(@Query("page") page: Int): MoviesResponse
+    suspend fun getUpcoming(@Query(PARAMS.PAGE) page: Int): MoviesResponse
 
     @GET(Route.TOP_RATED)
-    suspend fun getTopRated(@Query("page") page: Int): MoviesResponse
+    suspend fun getTopRated(@Query(PARAMS.PAGE) page: Int): MoviesResponse
 
     @GET(Route.DISCOVER)
     suspend fun discoverMovies(
-        @Query("page") page: Int,
-        @Query("sort_by") sortBy: String?,
+        @Query(PARAMS.PAGE) page: Int,
+        @Query(PARAMS.SORT_BY) sortBy: String?,
         @QueryMap filters: Map<String, String>?
     ): MoviesResponse
 
@@ -36,6 +38,12 @@ interface MovieApi {
         const val UPCOMING = "movie/upcoming"
         const val TOP_RATED = "movie/top_rated"
         const val DISCOVER = "discover/movie"
+    }
+
+    private object PARAMS {
+        const val MOVIE_ID = "id"
+        const val PAGE = "page"
+        const val SORT_BY = "sort_by"
     }
 
 }
