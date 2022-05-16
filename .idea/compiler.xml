@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.7">
+    <bytecodeTargetLevel target="1.8">
       <module name="Movieno.app" target="11" />
       <module name="Movieno.buildSrc" target="11" />
       <module name="Movieno.buildSrc.main" target="11" />
       <module name="Movieno.buildSrc.test" target="11" />
+      <module name="Movieno.core-data" target="11" />
       <module name="Movieno.webservice" target="11" />
     </bytecodeTargetLevel>
   </component>
