@@ -2,7 +2,7 @@ package ir.jatlin.webservice.api
 
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
 import ir.jatlin.webservice.model.response.MoviesResponse
-import ir.jatlin.webservice.model.response.PopularMoviesResponse
+import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -17,10 +17,10 @@ interface MovieApi {
     ): MovieDetailsDTO
 
     @GET(Route.POPULAR)
-    suspend fun getPopulars(@Query(PARAMS.PAGE) page: Int): PopularMoviesResponse
+    suspend fun getPopulars(@Query(PARAMS.PAGE) page: Int): MoviesResponse
 
     @GET(Route.UPCOMING)
-    suspend fun getUpcoming(@Query(PARAMS.PAGE) page: Int): MoviesResponse
+    suspend fun getUpcoming(@Query(PARAMS.PAGE) page: Int): UpcomingMoviesResponse
 
     @GET(Route.TOP_RATED)
     suspend fun getTopRated(@Query(PARAMS.PAGE) page: Int): MoviesResponse

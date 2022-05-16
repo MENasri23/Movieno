@@ -9,9 +9,11 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import ir.jatlin.webservice.api.MovieApi
 import ir.jatlin.webservice.deserializer.PosterDeserializer
+import ir.jatlin.webservice.deserializer.UpcomingMovieDeserializer
 import ir.jatlin.webservice.deserializer.VideoDTODeserializer
 import ir.jatlin.webservice.model.movie.PosterDTO
 import ir.jatlin.webservice.model.movie.VideoDTO
+import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -44,12 +46,16 @@ object NetworkModule {
     @Provides
     fun provideGson(): Gson = GsonBuilder()
         .registerTypeAdapter(
-            object : TypeToken<ArrayList<VideoDTO>>() {}.type,
+            object : TypeToken<MutableList<VideoDTO>>() {}.type,
             VideoDTODeserializer()
         )
         .registerTypeAdapter(
-            object : TypeToken<ArrayList<PosterDTO>>() {}.type,
+            object : TypeToken<MutableList<PosterDTO>>() {}.type,
             PosterDeserializer()
+        )
+        .registerTypeAdapter(
+            object : TypeToken<UpcomingMoviesResponse>() {}.type,
+            UpcomingMovieDeserializer()
         )
         .create()
 

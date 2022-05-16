@@ -1,6 +1,6 @@
 package ir.jatlin.webservice.model.response
 
-data class PopularMoviesResponse(
+data class UpcomingMoviesResponse(
     val dates: DateRange,
     val moviesResponse: MoviesResponse
 )
