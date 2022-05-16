@@ -16,3 +16,4 @@ rootProject.name = "Movieno"
 include ':app'
 include ':webservice'
 include ':core-data'
+include ':model'
