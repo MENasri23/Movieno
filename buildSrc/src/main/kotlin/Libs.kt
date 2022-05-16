@@ -17,11 +17,11 @@ object Libs {
         private const val timberVersion = "5.0.1"
 
         const val JUNIT = "junit:junit:${junitVersion}"
-        const val JUNIT_EXT = "androidx.test.ext:junit:${junitExtVersion}"
-        const val JUNIT_EXT_KTX = "androidx.test.ext:junit-ktx:${junitKtxVersion}"
-        const val ESPRESSO = "androidx.test.espresso:espresso-core:${espressoVersion}"
-        const val ROBOLECTRIC = "org.robolectric:robolectric:${robolectricVersion}"
-        const val TRUTH = "com.google.truth:truth:$truthVersion}"
+        const val JUNIT_EXT = "androidx.test.ext:junit:$junitExtVersion"
+        const val JUNIT_EXT_KTX = "androidx.test.ext:junit-ktx:$junitKtxVersion"
+        const val ESPRESSO = "androidx.test.espresso:espresso-core:$espressoVersion"
+        const val ROBOLECTRIC = "org.robolectric:robolectric:$robolectricVersion"
+        const val TRUTH = "com.google.truth:truth:$truthVersion"
         const val TIMBER = "com.jakewharton.timber:timber:${timberVersion}"
     }
 
@@ -96,14 +96,15 @@ object Libs {
         private const val version = "2.9.0"
         const val GSON = "com.google.code.gson:gson:${version}"
         const val RETROFIT2 = "com.squareup.retrofit2:retrofit:${version}"
-        const val GSON_CONVERTER =
-            "com.squareup.retrofit2:converter-gson:${version}"
+        const val GSON_CONVERTER = "com.squareup.retrofit2:converter-gson:${version}"
     }
 
     object OkHttp {
         private const val version = "4.9.3"
+        private const val testVersion = "3.8.1"
         const val OKHTTP3 = "com.squareup.okhttp3:okhttp:${version}"
         const val LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:${version}"
+        const val MOCK_WEB_SERVER = "com.squareup.okhttp3:mockwebserver:${testVersion}"
     }
 
     object Hilt {
@@ -112,6 +113,7 @@ object Libs {
         const val HILT = "com.google.dagger:hilt-android:${version}"
         const val HILT_COMPILER = "com.google.dagger:hilt-compiler:${version}"
         const val ANDROIDX_HILT_COMPILER = "androidx.hilt:hilt-compiler:${androidXCompilerVersion}"
+        const val TEST = "com.google.dagger:hilt-android-testing:${version}"
     }
 
     object Glide {

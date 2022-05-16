@@ -69,4 +69,8 @@ dependencies {
     implementation(Libs.Retrofit.GSON)
 
 
+    testImplementation(Libs.Test.JUNIT)
+    testImplementation(Libs.Test.TRUTH)
+
+
 }
