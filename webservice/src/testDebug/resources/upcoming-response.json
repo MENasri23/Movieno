@@ -1,0 +1,392 @@
+{
+  "dates": {
+    "maximum": "2022-06-11",
+    "minimum": "2022-05-15"
+  },
+  "page": 10,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/jirdIf1Sq918dKitXM1TxAOOvAW.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 930136,
+      "original_language": "te",
+      "original_title": "కృష్ణ వ్రింద విహారి",
+      "overview": "",
+      "popularity": 6.087,
+      "poster_path": "/8khwbeKNoV4L4mLhydgYpCYyE9u.jpg",
+      "release_date": "2022-05-20",
+      "title": "Krishna Vrinda Vihari",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 966604,
+      "original_language": "en",
+      "original_title": "Hiraeth",
+      "overview": "Malcom believes he witnessed a murder. Because of his mental state, he cannot trust what he sees. Without knowing it, he decides to find out if it really happened.",
+      "popularity": 5.345,
+      "poster_path": null,
+      "release_date": "2022-05-25",
+      "title": "Hiraeth",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/n1ixscCrUkirYSiZGca4ejiBAjR.jpg",
+      "genre_ids": [
+        16,
+        18,
+        10402
+      ],
+      "id": 642538,
+      "original_language": "ja",
+      "original_title": "犬王",
+      "overview": "Inu-oh is born with unique physical characteristics, and the horrified adults cover every inch of his body with garments, including a mask on his face. One day, he meets a boy named Tomona, a blind biwa player. As Tomona plays a delicate song of tangled fate, Inu-oh discovers an incredible ability to dance. Inu-oh and Tomona become business partners and inseparable friends, using their creative gifts to survive on the margins of society, as song after song gain them notoriety and propel them to stardom. Through the songs, Inu-oh mesmerizes his audiences on stage, and he gradually begins to transform into someone of unequaled beauty. But why is Tomona blind? Why was Inu-oh born with unique characteristics? It is a story about the friendship of Inu-oh and Tomona, who dance and sing to get to the truth and break each other's curse.",
+      "popularity": 4.053,
+      "poster_path": "/tlFygT4DWehrNjUwGgRTmIMp1rE.jpg",
+      "release_date": "2022-05-28",
+      "title": "Inu-Oh",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 973173,
+      "original_language": "zh",
+      "original_title": "爱犬奇缘",
+      "overview": "Every dog ​​is an angel who assists happiness, and their owners are facing a series of love related questions.",
+      "popularity": 6.528,
+      "poster_path": "/5QtpTc3f7lBgoDp5EgemysXI4WL.jpg",
+      "release_date": "2022-05-20",
+      "title": "Puppy Love",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uZm0Z44Uols1yH8XwxT3PxrLf3O.jpg",
+      "genre_ids": [
+        18,
+        53,
+        27
+      ],
+      "id": 514743,
+      "original_language": "en",
+      "original_title": "Cordelia",
+      "overview": "Cordelia ia a troubled, damaged soul who is only just recovering after some unnamed trauma; she is an actor rehearsing a play and comes to stay in a creepy London mansion flat occupied by her twin sister Caroline and Caroline’s boyfriend Matt. When they leave her alone there  Cordelia strikes up a friendship with Frank the charming, but strange and unreliable young man they can hear practising his cello in the upstairs flat – a relationship which quickly becomes very disturbing.",
+      "popularity": 4.853,
+      "poster_path": "/3LD2EaAxV09Md3RK5gIYx0RQw7X.jpg",
+      "release_date": "2019-09-25",
+      "title": "Cordelia",
+      "video": false,
+      "vote_average": 5.1,
+      "vote_count": 13
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6YGfK3es9NvTDfyQGoWHHzcPHk6.jpg",
+      "genre_ids": [
+        53,
+        27,
+        80
+      ],
+      "id": 899294,
+      "original_language": "en",
+      "original_title": "Frank and Penelope",
+      "overview": "A tale of love and violence when a man on his emotional last legs finds a savior seductively dancing in a run-down strip club. And a life most certainly headed off a cliff suddenly becomes redirected - as EVERYTHING is now worth dying for.",
+      "popularity": 6.306,
+      "poster_path": "/mLOX1XWh9NDunD9UFg20NCJlrET.jpg",
+      "release_date": "2022-06-03",
+      "title": "Frank and Penelope",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rOGPAlScIzuhNV56E8nISm2UlyH.jpg",
+      "genre_ids": [
+        53
+      ],
+      "id": 865464,
+      "original_language": "ml",
+      "original_title": "John Luther",
+      "overview": "",
+      "popularity": 3.921,
+      "poster_path": "/cJoQGHkdimCfYizm4e4onSAKa4U.jpg",
+      "release_date": "2022-05-27",
+      "title": "John Luther",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fBeWu9fWcCfHlyyPwQnuODSljae.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 833420,
+      "original_language": "it",
+      "original_title": "A Chiara",
+      "overview": "The Guerrasio family and friends gather to celebrate Claudio and Carmela’s oldest daughter’s 18th birthday. There is a healthy rivalry between the birthday girl and her 15-year-old sister Chiara as they compete on the dancefloor. It is a happy occasion, and the close-knit family are on top form. However, everything changes the next day when the father disappears. Chiara, unconvinced by the cover story, starts to investigate. As she gets closer to the truth, she is forced to decide what kind of future she wants for herself.",
+      "popularity": 4.873,
+      "poster_path": "/yjx6jBcZYO932gNEbjUrpiRhv0x.jpg",
+      "release_date": "2021-10-07",
+      "title": "A Chiara",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 29
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6c9Siy38KPj8T8kHpP6xZPJAMQ5.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "id": 487631,
+      "original_language": "fr",
+      "original_title": "Adoration",
+      "overview": "Paul is a 12 years old boy. He lives with his mother in the private clinic of doctor Loisel, deeply hidden in the woods. Paul likes to roam the forest and observe nature. One day Gloria, a schizophrenic teenager of around fifteen years old, arrives. Paul falls in love immediately. There is an awkward love between the two children. Because Paul thinks that Gloria is in danger, he helps her escape. This is the beginning of a long journey that will take the two children to the heart of madness.",
+      "popularity": 4.327,
+      "poster_path": "/cWmm2q0PyVIBLR2Zu4dw3x3nVzn.jpg",
+      "release_date": "2020-01-22",
+      "title": "Adoration",
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 38
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vgssRsGoCq8AQnlcs8Sow8noj43.jpg",
+      "genre_ids": [
+        18,
+        36,
+        10752
+      ],
+      "id": 399178,
+      "original_language": "en",
+      "original_title": "Benediction",
+      "overview": "The story of soldier and poet Siegfried Sassoon (1886–1967), who was decorated for bravery on the Western Front, and is best remembered for his angry and compassionate poems about the First World War, which brought him public and critical acclaim. Avoiding the sentimentality and jingoism of many war poets, Sassoon wrote of the horror and brutality of trench warfare and contemptuously satirised generals, politicians, and churchmen for their incompetence and blind support of the war.",
+      "popularity": 2.839,
+      "poster_path": "/zyWvvtVvVDNuyCl2eNcYYnI4oIO.jpg",
+      "release_date": "2021-12-23",
+      "title": "Benediction",
+      "video": false,
+      "vote_average": 4.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1GGc5XXaFgNBoJnOEBJCnXSMwhx.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 743563,
+      "original_language": "ta",
+      "original_title": "விக்ரம்",
+      "overview": "",
+      "popularity": 6.007,
+      "poster_path": "/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
+      "release_date": "2022-06-03",
+      "title": "Vikram",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/y3mh9VWSbtkL64SHRQaltq2hzZw.jpg",
+      "genre_ids": [
+        53,
+        35,
+        18
+      ],
+      "id": 796102,
+      "original_language": "en",
+      "original_title": "18½",
+      "overview": "In 1974, a White House transcriber is thrust into the Watergate scandal when she obtains the only copy of the infamous 18½-minute gap in Nixon's tapes.",
+      "popularity": 5.39,
+      "poster_path": "/4Y0UNwF6cx7Et4OFhqtZjZBchJt.jpg",
+      "release_date": "2022-05-27",
+      "title": "18½",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 859350,
+      "original_language": "en",
+      "original_title": "Hold Your Fire",
+      "overview": "In 1973, four young African-American men stealing guns for self-defense in Brooklyn were cornered by the NYPD. A violent gun battle killed a police officer, beginning the longest hostage siege in NYPD history. The NYPD’s 130-year-old policy was to deliver an ultimatum, then respond with deadly force. Could visionary police psychologist Harvey Schlossberg convince his superiors to do the unthinkable –  negotiate with “criminals” – and save twelve hostages from an impending bloodbath? In never-before-seen film and gripping interviews with survivors, HOLD YOUR FIRE uncovers what really happened in this landmark event with the potential to revolutionize American policing.",
+      "popularity": 4.729,
+      "poster_path": "/n6SVAGAoPyP8V6AvUtqPOAbWW9q.jpg",
+      "release_date": "2022-05-02",
+      "title": "Hold Your Fire",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 800855,
+      "original_language": "es",
+      "original_title": "Live is Life",
+      "overview": "",
+      "popularity": 2.922,
+      "poster_path": "/wM1P6lkw6ZHnb4YfUS4SihlxN9N.jpg",
+      "release_date": "2022-06-03",
+      "title": "Live is Life",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        99
+      ],
+      "id": 701261,
+      "original_language": "en",
+      "original_title": "Ablaze",
+      "overview": "A feature documentary about opera singer Tiriki Onus who finds a 70-year-old silent film believed to be made by his grandfather, Aboriginal leader and filmmaker Bill Onus. As Tiriki travels across the continent and pieces together clues to the film’s origins, he discovers more about Bill, his fight for Aboriginal rights and the price he paid for speaking out.",
+      "popularity": 4.527,
+      "poster_path": "/nBIOjJfjMpJKEPmqW3J0krIJH1Q.jpg",
+      "release_date": "2022-05-26",
+      "title": "Ablaze",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        16,
+        35,
+        10749
+      ],
+      "id": 938567,
+      "original_language": "ja",
+      "original_title": "劇場版 からかい上手の高木さん",
+      "overview": "",
+      "popularity": 5.548,
+      "poster_path": "/prxFFOC7ZOf6mD8x9Fxb1NtREbi.jpg",
+      "release_date": "2022-06-10",
+      "title": "Teasing Master Takagi-san: The Movie",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l9pTUWSHpD9MdEZySCM4e146MCd.jpg",
+      "genre_ids": [
+        80,
+        28,
+        18
+      ],
+      "id": 661078,
+      "original_language": "ml",
+      "original_title": "തുറമുഖം",
+      "overview": "The Harbour shows how two brothers end up on opposing sides of this system. One becomes the leader of an employer’s gang of thugs, while the other becomes an activist. All the while, the women in their family go hungry and the community is ravaged by violence and alcoholism.",
+      "popularity": 2.658,
+      "poster_path": "/rQ2lPXyAwm0c5Sre9xyvnTPEt0Z.jpg",
+      "release_date": "2022-06-03",
+      "title": "The Harbour",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h6gQG8TRw0pfK5WNDVrFwj2VfH8.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 764837,
+      "original_language": "fr",
+      "original_title": "Babysitter",
+      "overview": "Middle-aged sexist Cédric gets suspended from work after drunkenly kissing a female reporter during a prank on live TV. Stuck at home with his long-suffering girlfriend Nadine and their incessantly crying baby, Cédric teams up with his sensitive brother Jean-Michel to co-author a confessional book apologizing for their past misogyny. Enter Amy: a mysterious and provocative young babysitter, who, like a Mary Poppins of the libido, forces the trio to face their sexual anxieties while turning their lives upside down.",
+      "popularity": 3.668,
+      "poster_path": "/rWTIfTpZsoMS96TxOwbffg4n9fz.jpg",
+      "release_date": "2022-04-27",
+      "title": "Babysitter",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 11
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7gbuG6hAhXhgzJQdKvLVRxvePOS.jpg",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "id": 717151,
+      "original_language": "en",
+      "original_title": "The Phantom of the Open",
+      "overview": "Maurice Flitcroft, a dreamer and unrelenting optimist, managed to gain entry to The British Open Golf Championship qualifying in 1976 and subsequently shot the worst round in Open history, becoming a folk hero in the process.",
+      "popularity": 4.453,
+      "poster_path": "/iLFR9oMpLlJCuJGLSlflvAgOFaL.jpg",
+      "release_date": "2022-03-18",
+      "title": "The Phantom of the Open",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 10
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qR0Vj9SsUIuV4WgSzCzdlxqqZAE.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 670343,
+      "original_language": "fa",
+      "original_title": "خورشید",
+      "overview": "The story of 12-year-old Ali and his three friends. Together they work hard to survive and support their families, doing small jobs in a garage and committing petty crimes to make fast money. In a turn of events that seems miraculous, Ali is entrusted to find hidden treasure underground. He recruits his gang, but first, to gain access to the tunnel, the children must enroll at the Sun School, a charitable institution that tries to educate street kids and child laborers, close to where the treasure is located.",
+      "popularity": 5.401,
+      "poster_path": "/wFEiIKWWlJKgP08Lanpum17K0sa.jpg",
+      "release_date": "2021-05-14",
+      "title": "Sun Children",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 25
+    }
+  ],
+  "total_pages": 20,
+  "total_results": 397
+}
