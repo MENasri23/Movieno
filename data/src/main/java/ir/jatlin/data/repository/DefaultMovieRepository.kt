@@ -1,35 +1,39 @@
 package ir.jatlin.data.repository
 
 import ir.jatlin.core.data.repository.MovieRepository
+import ir.jatlin.core.data.source.MovieRemoteDataSource
+import ir.jatlin.data.di.IODispatcher
 import ir.jatlin.model.movie.MovieItem
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 
 class DefaultMovieRepository @Inject constructor(
-    private val dispatcher: CoroutineDispatcher
+    @IODispatcher private val dispatcher: CoroutineDispatcher,
+    private val network: MovieRemoteDataSource,
 ) : MovieRepository {
 
-    override suspend fun getMovieDetails(movieId: Long): MovieDetailsDTO {
+    override  fun getMovieDetails(movieId: Long): Flow<MovieDetailsDTO> {
         TODO("Not yet implemented")
     }
 
-    override suspend fun getPopulars(page: Int): MoviesResponse {
+    override  fun getPopulars(page: Int): Flow<MoviesResponse> {
         TODO("Not yet implemented")
     }
 
-    override suspend fun getUpcoming(page: Int): UpcomingMoviesResponse {
+    override  fun getUpcoming(page: Int): Flow<UpcomingMoviesResponse> {
         TODO("Not yet implemented")
     }
 
-    override suspend fun getTopRated(page: Int): MoviesResponse {
+    override  fun getTopRated(page: Int): Flow<MoviesResponse> {
         TODO("Not yet implemented")
     }
 
-    override suspend fun discoverMovies(
+    override  fun discoverMovies(
         page: Int,
         sortBy: String?,
         filters: Map<String, String>?

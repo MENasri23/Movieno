@@ -35,4 +35,6 @@ android {
 dependencies {
     implementation(project(":model"))
     implementation(project(":webservice"))
+
+    implementation(Libs.Kotlinx.COROUTINES_ANDROID)
 }
