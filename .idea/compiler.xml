@@ -7,6 +7,7 @@
       <module name="Movieno.buildSrc.main" target="11" />
       <module name="Movieno.buildSrc.test" target="11" />
       <module name="Movieno.core-data" target="11" />
+      <module name="Movieno.data" target="11" />
       <module name="Movieno.webservice" target="11" />
     </bytecodeTargetLevel>
   </component>
