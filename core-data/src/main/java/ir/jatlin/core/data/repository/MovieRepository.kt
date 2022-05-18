@@ -1,5 +1,6 @@
 package ir.jatlin.core.data.repository
 
+import ir.jatlin.model.movie.MovieDetails
 import ir.jatlin.model.movie.MovieItem
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
 import ir.jatlin.webservice.model.response.MoviesResponse
@@ -8,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface MovieRepository {
 
-    fun getMovieDetails(movieId: Long): Flow<MovieDetailsDTO>
+    fun getMovieDetails(movieId: Long): Flow<MovieDetails>
 
     fun getPopulars(page: Int): Flow<MoviesResponse>
 

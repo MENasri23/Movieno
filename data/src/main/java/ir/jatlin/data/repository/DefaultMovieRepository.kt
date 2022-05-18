@@ -3,7 +3,8 @@ package ir.jatlin.data.repository
 import ir.jatlin.core.data.repository.MovieRepository
 import ir.jatlin.core.data.source.MovieRemoteDataSource
 import ir.jatlin.data.di.IODispatcher
-import ir.jatlin.webservice.model.movie.MovieDetailsDTO
+import ir.jatlin.data.repository.mapper.movie.asMovieDetails
+import ir.jatlin.model.movie.MovieDetails
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import kotlinx.coroutines.CoroutineDispatcher
@@ -17,9 +18,8 @@ class DefaultMovieRepository @Inject constructor(
     private val network: MovieRemoteDataSource,
 ) : MovieRepository {
 
-    override fun getMovieDetails(movieId: Long): Flow<MovieDetailsDTO> = flow {
-        // TODO: save to database
-        emit(network.getMovieDetails(movieId))
+    override fun getMovieDetails(movieId: Long): Flow<MovieDetails> = flow {
+        emit(network.getMovieDetails(movieId).asMovieDetails())
     }
 
     override fun getPopulars(page: Int): Flow<MoviesResponse> = flow {
