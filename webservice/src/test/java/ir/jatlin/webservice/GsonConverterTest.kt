@@ -3,6 +3,7 @@ package ir.jatlin.webservice
 import com.google.common.truth.Truth.assertThat
 import ir.jatlin.webservice.di.NetworkModule
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
+import ir.jatlin.webservice.model.response.GenresResponse
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.NetworkError
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
@@ -74,6 +75,15 @@ class GsonConverterTest {
     ) { error ->
         assertThat(error.code).isEqualTo(7)
         assertThat(error.message).isNotNull()
+    }
+
+    @Test
+    fun `parse list of genres successfully`() = parseAndAssert(
+        resourceName = "genres-response.json",
+        classType = GenresResponse::class.java,
+    ) { genresResponse ->
+        assertThat(genresResponse.genres).isNotEmpty()
+        assertThat(genresResponse.genres).hasSize(19)
     }
 
     private fun <T : Any> parseAndAssert(
