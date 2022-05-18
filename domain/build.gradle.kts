@@ -33,8 +33,9 @@ android {
 }
 
 dependencies {
-
+    implementation(project(":core-shared"))
     implementation(project(":core-data"))
+    implementation(project(":data"))
     implementation(project(":model"))
 
     // coroutine
