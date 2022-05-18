@@ -4,6 +4,7 @@ import com.google.common.truth.Truth.assertThat
 import ir.jatlin.webservice.di.NetworkModule
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
 import ir.jatlin.webservice.model.response.MoviesResponse
+import ir.jatlin.webservice.model.response.NetworkError
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -64,6 +65,15 @@ class GsonConverterTest {
         assertThat(discoverMovies).isNotNull()
         assertThat(discoverMovies).isInstanceOf(MoviesResponse::class.java)
         assertThat(discoverMovies.movieList).isNotNull()
+    }
+
+    @Test
+    fun `parse network error successfully`() = parseAndAssert(
+        resourceName = "network-error-response.json",
+        classType = NetworkError::class.java
+    ) { error ->
+        assertThat(error.code).isEqualTo(7)
+        assertThat(error.message).isNotNull()
     }
 
     private fun <T : Any> parseAndAssert(
