@@ -1,6 +1,7 @@
 package ir.jatlin.webservice.api
 
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
+import ir.jatlin.webservice.model.response.GenresResponse
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import retrofit2.Response
@@ -26,6 +27,9 @@ interface MovieApi {
     @GET(Route.TOP_RATED)
     suspend fun getTopRated(@Query(PARAMS.PAGE) page: Int): Response<MoviesResponse>
 
+    @GET(Route.GENRES)
+    suspend fun getMovieGenres(): Response<GenresResponse>
+
     @GET(Route.DISCOVER)
     suspend fun discoverMovies(
         @Query(PARAMS.PAGE) page: Int,
@@ -39,6 +43,7 @@ interface MovieApi {
         const val POPULAR = "movie/popular"
         const val UPCOMING = "movie/upcoming"
         const val TOP_RATED = "movie/top_rated"
+        const val GENRES = "genre/movie/list"
         const val DISCOVER = "discover/movie"
     }
 
