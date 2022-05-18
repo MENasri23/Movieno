@@ -16,12 +16,17 @@ android {
     }
 
     buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+        buildTypes {
+             create("staging") {
+                initWith(getByName("debug"))
+                matchingFallbacks.add("debug")
+            }
+        }
+
+        sourceSets {
+            getByName("staging") {
+                java.srcDir("src/release/java")
+            }
         }
     }
     compileOptions {
@@ -45,4 +50,7 @@ dependencies {
     implementation(Libs.Hilt.HILT)
     kapt(Libs.Hilt.HILT_COMPILER)
     kapt(Libs.Hilt.ANDROIDX_HILT_COMPILER)
+
+    // gson
+    implementation(Libs.Retrofit.GSON)
 }
