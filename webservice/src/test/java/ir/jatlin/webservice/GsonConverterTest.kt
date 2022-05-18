@@ -1,7 +1,6 @@
 package ir.jatlin.webservice
 
-import com.google.common.truth.Truth
-import com.google.common.truth.Truth.*
+import com.google.common.truth.Truth.assertThat
 import ir.jatlin.webservice.di.NetworkModule
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
 import ir.jatlin.webservice.model.response.MoviesResponse
@@ -9,7 +8,6 @@ import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
-import kotlin.reflect.KClass
 
 @RunWith(JUnit4::class)
 class GsonConverterTest {

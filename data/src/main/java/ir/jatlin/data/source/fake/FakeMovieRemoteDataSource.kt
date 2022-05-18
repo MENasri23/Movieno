@@ -1,13 +1,14 @@
-package ir.jatlin.data.source.remote
+package ir.jatlin.data.source.fake
 
 import com.google.gson.Gson
 import ir.jatlin.core.data.source.MovieRemoteDataSource
-import ir.jatlin.data.di.CpuDispatcher
 import ir.jatlin.data.di.IODispatcher
+import ir.jatlin.webservice.ResourceProvider
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 class FakeMovieRemoteDataSource @Inject constructor(
@@ -16,26 +17,44 @@ class FakeMovieRemoteDataSource @Inject constructor(
 ) : MovieRemoteDataSource {
 
     override suspend fun getMovieDetails(movieId: Long): MovieDetailsDTO {
-        TODO("Not yet implemented")
+        return withContext(dispatcher) {
+            gson.fromJson(
+                ResourceProvider.readFrom("movie-detail-response.json"),
+                MovieDetailsDTO::class.java
+            )
+        }
     }
 
-    override suspend fun getPopulars(page: Int): MoviesResponse {
-        TODO("Not yet implemented")
+    override suspend fun getPopulars(page: Int): MoviesResponse = withContext(dispatcher) {
+        gson.fromJson(
+            ResourceProvider.readFrom("popular-movie-response.json"),
+            MoviesResponse::class.java
+        )
     }
 
-    override suspend fun getUpcoming(page: Int): UpcomingMoviesResponse {
-        TODO("Not yet implemented")
+    override suspend fun getUpcoming(page: Int): UpcomingMoviesResponse = withContext(dispatcher) {
+        gson.fromJson(
+            ResourceProvider.readFrom("upcoming-response.json"),
+            UpcomingMoviesResponse::class.java
+        )
     }
 
-    override suspend fun getTopRated(page: Int): MoviesResponse {
-        TODO("Not yet implemented")
+    override suspend fun getTopRated(page: Int): MoviesResponse = withContext(dispatcher) {
+        gson.fromJson(
+            ResourceProvider.readFrom("top-rated-movie-response.json"),
+            MoviesResponse::class.java
+        )
     }
+
 
     override suspend fun discoverMovies(
         page: Int,
         sortBy: String?,
         filters: Map<String, String>?
-    ): MoviesResponse {
-        TODO("Not yet implemented")
+    ): MoviesResponse = withContext(dispatcher) {
+        gson.fromJson(
+            ResourceProvider.readFrom("discover-movie-response.json"),
+            MoviesResponse::class.java
+        )
     }
 }
