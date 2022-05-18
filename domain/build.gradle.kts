@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
 }
 
 android {
@@ -41,6 +42,8 @@ dependencies {
     // coroutine
     implementation(Libs.Kotlinx.COROUTINES_ANDROID)
 
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
+    // hilt
+    implementation(Libs.Hilt.HILT)
+    kapt(Libs.Hilt.HILT_COMPILER)
+    kapt(Libs.Hilt.ANDROIDX_HILT_COMPILER)
 }
