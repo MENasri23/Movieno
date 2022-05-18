@@ -5,6 +5,7 @@ import ir.jatlin.core.data.source.MovieRemoteDataSource
 import ir.jatlin.data.di.IODispatcher
 import ir.jatlin.webservice.ResourceProvider
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
+import ir.jatlin.webservice.model.response.GenresResponse
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import kotlinx.coroutines.CoroutineDispatcher
@@ -46,6 +47,12 @@ class FakeMovieRemoteDataSource @Inject constructor(
         )
     }
 
+    override suspend fun getAllGenres(): GenresResponse = withContext(dispatcher) {
+        gson.fromJson(
+            ResourceProvider.readFrom("genres-response.json"),
+            GenresResponse::class.java
+        )
+    }
 
     override suspend fun discoverMovies(
         page: Int,

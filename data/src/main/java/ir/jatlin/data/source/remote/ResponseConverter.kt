@@ -5,7 +5,7 @@ import ir.jatlin.webservice.model.response.NetworkError
 import retrofit2.Response
 import javax.inject.Inject
 
-class SafeApiCall @Inject constructor(
+class ResponseConverter @Inject constructor(
     private val gson: Gson
 ) {
 

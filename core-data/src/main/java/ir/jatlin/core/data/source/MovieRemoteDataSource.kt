@@ -1,6 +1,7 @@
 package ir.jatlin.core.data.source
 
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
+import ir.jatlin.webservice.model.response.GenresResponse
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 
@@ -13,6 +14,8 @@ interface MovieRemoteDataSource {
     suspend fun getUpcoming(page: Int): UpcomingMoviesResponse
 
     suspend fun getTopRated(page: Int): MoviesResponse
+
+    suspend fun getAllGenres(): GenresResponse
 
     suspend fun discoverMovies(
         page: Int,
