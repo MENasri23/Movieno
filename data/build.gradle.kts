@@ -53,4 +53,5 @@ dependencies {
 
     // gson
     implementation(Libs.Retrofit.GSON)
+    implementation(Libs.Retrofit.RETROFIT2)
 }

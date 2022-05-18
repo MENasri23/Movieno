@@ -9,6 +9,8 @@ import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
 import javax.inject.Inject
 import javax.inject.Singleton
 
+// todo: refactor code and put remote data source in webservice
+
 @Singleton
 class MovieRetrofitDataSource @Inject constructor(
     private val networkApi: MovieApi,
@@ -16,19 +18,19 @@ class MovieRetrofitDataSource @Inject constructor(
 ) : MovieRemoteDataSource {
 
     override suspend fun getMovieDetails(movieId: Long): MovieDetailsDTO {
-        return safeCall { networkApi.getMovieDetails(movieId) }
+        return safeCall(networkApi.getMovieDetails(movieId))
     }
 
     override suspend fun getPopulars(page: Int): MoviesResponse {
-        return safeCall { networkApi.getPopulars(page) }
+        return safeCall(networkApi.getPopulars(page))
     }
 
     override suspend fun getUpcoming(page: Int): UpcomingMoviesResponse {
-        return safeCall { networkApi.getUpcoming(page) }
+        return safeCall(networkApi.getUpcoming(page))
     }
 
     override suspend fun getTopRated(page: Int): MoviesResponse {
-        return safeCall { networkApi.getTopRated(page) }
+        return safeCall(networkApi.getTopRated(page))
     }
 
     override suspend fun discoverMovies(
@@ -36,11 +38,12 @@ class MovieRetrofitDataSource @Inject constructor(
         sortBy: String?,
         filters: Map<String, String>?
     ): MoviesResponse {
-        return safeCall {
+        return safeCall(
             networkApi.discoverMovies(
                 page = page, sortBy = sortBy, filters = filters
             )
-        }
+        )
     }
+
 
 }

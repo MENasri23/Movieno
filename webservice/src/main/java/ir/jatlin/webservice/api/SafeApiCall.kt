@@ -10,10 +10,9 @@ class SafeApiCall @Inject constructor(
 ) {
 
     @Throws()
-    suspend operator fun <T> invoke(
-        apiCall: suspend () -> Response<T>
+    operator fun <T> invoke(
+        response: Response<T>
     ): T {
-        val response = apiCall()
         return if (response.isSuccessful) {
             val body = response.body()
             when {

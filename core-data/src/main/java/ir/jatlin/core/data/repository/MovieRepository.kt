@@ -20,6 +20,6 @@ interface MovieRepository {
         page: Int,
         sortBy: String? = null,
         filters: Map<String, String>? = null
-    ): List<MovieItem>
+    ): Flow<MoviesResponse>
 
 }
