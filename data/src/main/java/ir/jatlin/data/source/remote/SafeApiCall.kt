@@ -1,4 +1,4 @@
-package ir.jatlin.webservice.api
+package ir.jatlin.data.source.remote
 
 import com.google.gson.Gson
 import ir.jatlin.webservice.model.response.NetworkError

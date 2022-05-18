@@ -1,4 +1,4 @@
-package ir.jatlin.domain.result
+package ir.jatlin.core.shared.result.fail
 
 sealed class ErrorCause {
 
@@ -21,5 +21,14 @@ sealed class ErrorCause {
     object Forbidden : ErrorCause()
     object BadRequest : ErrorCause()
     object RequestTimeout : ErrorCause()
+
+
+    object StatusCode {
+        const val BAD_REQUEST = 400
+        const val FORBIDDEN = 403
+        const val NOT_FOUND = 404
+        const val REQUEST_TIMEOUT = 408
+        const val VERIFY_OTP_FAILED = 1000
+    }
 
 }

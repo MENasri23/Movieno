@@ -1,4 +1,6 @@
-package ir.jatlin.domain.result
+package ir.jatlin.core.shared.result
+
+import ir.jatlin.core.shared.result.fail.ErrorCause
 
 /**
  * A generic class that holds a value with its loading status.

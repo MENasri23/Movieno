@@ -2,7 +2,6 @@ package ir.jatlin.data.source.remote
 
 import ir.jatlin.core.data.source.MovieRemoteDataSource
 import ir.jatlin.webservice.api.MovieApi
-import ir.jatlin.webservice.api.SafeApiCall
 import ir.jatlin.webservice.model.movie.MovieDetailsDTO
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
