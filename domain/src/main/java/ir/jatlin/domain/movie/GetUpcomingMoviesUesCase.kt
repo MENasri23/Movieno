@@ -2,8 +2,7 @@ package ir.jatlin.domain.movie
 
 import ir.jatlin.core.data.repository.MovieRepository
 import ir.jatlin.domain.FlowUseCase
-import ir.jatlin.model.info.MoviesInfo
-import ir.jatlin.model.info.UpcomingMoviesInfo
+import ir.jatlin.model.movie.info.UpcomingMoviesInfo
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

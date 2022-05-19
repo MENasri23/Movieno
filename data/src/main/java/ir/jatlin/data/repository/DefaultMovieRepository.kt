@@ -8,8 +8,8 @@ import ir.jatlin.data.repository.mapper.movie.asMovieDetails
 import ir.jatlin.data.repository.mapper.movie.asMovieItem
 import ir.jatlin.data.repository.mapper.response.asExternalModel
 import ir.jatlin.model.movie.MovieDetails
-import ir.jatlin.model.info.MoviesInfo
-import ir.jatlin.model.info.UpcomingMoviesInfo
+import ir.jatlin.model.movie.info.MoviesInfo
+import ir.jatlin.model.movie.info.UpcomingMoviesInfo
 import ir.jatlin.webservice.model.movie.MovieDTO
 import ir.jatlin.webservice.model.response.MoviesResponse
 import ir.jatlin.webservice.model.response.UpcomingMoviesResponse

@@ -1,9 +1,8 @@
 package ir.jatlin.core.data.repository
 
 import ir.jatlin.model.movie.MovieDetails
-import ir.jatlin.model.info.MoviesInfo
-import ir.jatlin.model.info.UpcomingMoviesInfo
-import ir.jatlin.webservice.model.response.UpcomingMoviesResponse
+import ir.jatlin.model.movie.info.MoviesInfo
+import ir.jatlin.model.movie.info.UpcomingMoviesInfo
 import kotlinx.coroutines.flow.Flow
 
 interface MovieRepository {

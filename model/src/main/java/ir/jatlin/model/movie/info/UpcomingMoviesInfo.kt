@@ -1,4 +1,4 @@
-package ir.jatlin.model.info
+package ir.jatlin.model.movie.info
 
 
 data class UpcomingMoviesInfo(
