@@ -3,6 +3,8 @@ import Libs.Androidx.implementAppLibraries
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("dagger.hilt.android.plugin")
+    kotlin("kapt")
 }
 
 android {
@@ -42,6 +44,11 @@ dependencies {
     implementation(project(":domain"))
 
     implementAppLibraries()
+
+    // hilt
+    implementation(Libs.Hilt.HILT)
+    kapt(Libs.Hilt.HILT_COMPILER)
+    kapt(Libs.Hilt.ANDROIDX_HILT_COMPILER)
 
     testImplementation(Libs.Test.JUNIT)
     androidTestImplementation(Libs.Androidx.Test.JUNIT_EXT)
