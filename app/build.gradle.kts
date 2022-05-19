@@ -74,6 +74,9 @@ dependencies {
     implementation(Libs.Glide.GLIDE)
     kapt(Libs.Glide.COMPILER)
 
+    // timber
+    implementation(Libs.Debug.TIMBER)
+
     testImplementation(Libs.Test.JUNIT)
     androidTestImplementation(Libs.Androidx.Test.JUNIT_EXT)
     androidTestImplementation(Libs.Androidx.Test.ESPRESSO)

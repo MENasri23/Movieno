@@ -11,13 +11,18 @@ object Libs {
         private const val junitVersion = "4.13.2"
         private const val robolectricVersion = "4.7.3"
         private const val truthVersion = "1.1.3"
-        private const val timberVersion = "5.0.1"
+
 
         const val JUNIT = "junit:junit:${junitVersion}"
 
 
         const val ROBOLECTRIC = "org.robolectric:robolectric:$robolectricVersion"
         const val TRUTH = "com.google.truth:truth:$truthVersion"
+
+    }
+
+    object Debug {
+        private const val timberVersion = "5.0.1"
         const val TIMBER = "com.jakewharton.timber:timber:${timberVersion}"
     }
 
