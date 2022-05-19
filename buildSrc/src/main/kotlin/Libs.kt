@@ -9,17 +9,13 @@ object Libs {
 
     object Test {
         private const val junitVersion = "4.13.2"
-        private const val junitExtVersion = "1.1.3"
-        private const val junitKtxVersion = "1.1.3"
-        private const val espressoVersion = "3.4.0"
         private const val robolectricVersion = "4.7.3"
         private const val truthVersion = "1.1.3"
         private const val timberVersion = "5.0.1"
 
         const val JUNIT = "junit:junit:${junitVersion}"
-        const val JUNIT_EXT = "androidx.test.ext:junit:$junitExtVersion"
-        const val JUNIT_EXT_KTX = "androidx.test.ext:junit-ktx:$junitKtxVersion"
-        const val ESPRESSO = "androidx.test.espresso:espresso-core:$espressoVersion"
+
+
         const val ROBOLECTRIC = "org.robolectric:robolectric:$robolectricVersion"
         const val TRUTH = "com.google.truth:truth:$truthVersion"
         const val TIMBER = "com.jakewharton.timber:timber:${timberVersion}"
@@ -46,11 +42,18 @@ object Libs {
         object Test {
             private const val version = "1.4.0"
             private const val archCoreVersion = "2.1.0"
+            private const val junitExtVersion = "1.1.3"
+            private const val junitKtxVersion = "1.1.3"
+            private const val espressoVersion = "3.4.0"
 
+            const val JUNIT_EXT = "androidx.test.ext:junit:$junitExtVersion"
+            const val JUNIT_EXT_KTX = "androidx.test.ext:junit-ktx:$junitKtxVersion"
             const val CORE_KTX = "androidx.test:core-ktx:${version}"
             const val ARCH_CORE = "androidx.arch.core:core-testing:${archCoreVersion}"
             const val RULES = "androidx.test:rules:${version}"
             const val RUNNER = "androidx.test:runner:${version}"
+
+            const val ESPRESSO = "androidx.test.espresso:espresso-core:$espressoVersion"
         }
 
         object Lifecycle {
