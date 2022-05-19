@@ -6,7 +6,7 @@ import ir.jatlin.webservice.model.movie.MovieDTO
 
 
 fun MovieDTO.asMovieItem(
-    genres: List<Genre>
+    genres: List<Genre>,
 ) = MovieItem(
     id = id,
     isAdult = isAdult,
