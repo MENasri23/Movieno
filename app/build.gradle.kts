@@ -45,6 +45,9 @@ dependencies {
 
     implementAppLibraries()
 
+    // coroutine
+    implementation(Libs.Kotlinx.COROUTINES_ANDROID)
+
     // hilt
     implementation(Libs.Hilt.HILT)
     kapt(Libs.Hilt.HILT_COMPILER)
