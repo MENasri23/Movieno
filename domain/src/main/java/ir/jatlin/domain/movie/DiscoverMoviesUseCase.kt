@@ -1,16 +1,20 @@
 package ir.jatlin.domain.movie
 
 import ir.jatlin.core.data.repository.MovieRepository
-import ir.jatlin.domain.FlowUseCase
+import ir.jatlin.core.shared.result.fail.ErrorHandler
+import ir.jatlin.data.di.IODispatcher
+import ir.jatlin.domain.CoroutineUseCase
 import ir.jatlin.model.movie.info.MoviesInfo
-import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject
 
 class DiscoverMoviesUseCase @Inject constructor(
-    private val movieRepository: MovieRepository
-) : FlowUseCase<DiscoverMoviesUseCase.Prams, MoviesInfo>() {
+    private val movieRepository: MovieRepository,
+    errorHandler: ErrorHandler,
+    @IODispatcher dispatcher: CoroutineDispatcher
+) : CoroutineUseCase<DiscoverMoviesUseCase.Params, MoviesInfo>(errorHandler, dispatcher) {
 
-    override fun execute(params: Prams): Flow<MoviesInfo> {
+    override suspend fun execute(params: Params): MoviesInfo {
         return movieRepository.discoverMovies(
             page = params.page,
             sortBy = params.sortBy,
@@ -18,7 +22,7 @@ class DiscoverMoviesUseCase @Inject constructor(
         )
     }
 
-    data class Prams(
+    data class Params(
         val page: Int,
         val sortBy: String? = null,
     ) {

@@ -15,10 +15,10 @@ interface MovieRepository {
 
     fun getTopRated(page: Int): Flow<MoviesInfo>
 
-    fun discoverMovies(
+    suspend fun discoverMovies(
         page: Int,
         sortBy: String? = null,
         filters: Map<String, String>? = null
-    ): Flow<MoviesInfo>
+    ): MoviesInfo
 
 }

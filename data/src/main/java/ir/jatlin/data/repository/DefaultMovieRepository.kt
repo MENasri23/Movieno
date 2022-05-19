@@ -41,12 +41,12 @@ class DefaultMovieRepository @Inject constructor(
         emit(network.getTopRated(page).asExternalModel())
     }
 
-    override fun discoverMovies(
+    override suspend fun discoverMovies(
         page: Int,
         sortBy: String?,
         filters: Map<String, String>?
-    ): Flow<MoviesInfo> = flow {
-        emit(network.discoverMovies(page, sortBy, filters).asExternalModel())
+    ): MoviesInfo {
+        return network.discoverMovies(page, sortBy, filters).asExternalModel()
     }
 
     private suspend fun UpcomingMoviesResponse.asExternalModel() = UpcomingMoviesInfo(
