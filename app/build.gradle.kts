@@ -51,6 +51,9 @@ dependencies {
     // ktx
     implementation(Libs.Androidx.ACTIVITY_KTX)
     implementation(Libs.Androidx.FRAGMENT_KTX)
+
+    // lifecycle
+    implementation(Libs.Androidx.Lifecycle.RUNTIME)
     implementation(Libs.Androidx.Lifecycle.VIEW_MODEL_KTX)
 
     // navigation
