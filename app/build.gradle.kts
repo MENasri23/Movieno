@@ -47,11 +47,16 @@ dependencies {
 
     // legacy
     implementation(Libs.Androidx.LEGACY_SUPPORT)
-    
+
     // ktx
     implementation(Libs.Androidx.ACTIVITY_KTX)
     implementation(Libs.Androidx.FRAGMENT_KTX)
     implementation(Libs.Androidx.Lifecycle.VIEW_MODEL_KTX)
+
+    // navigation
+    implementation(Libs.Androidx.Navigation.FRAGMENT_KTX)
+    implementation(Libs.Androidx.Navigation.RUNTIME_KTX)
+    implementation(Libs.Androidx.Navigation.UI_KTX)
 
     // coroutine
     implementation(Libs.Kotlinx.COROUTINES_ANDROID)
