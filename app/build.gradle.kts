@@ -45,8 +45,17 @@ dependencies {
 
     implementAppLibraries()
 
+    // legacy
+    implementation(Libs.Androidx.LEGACY_SUPPORT)
+    
+    // ktx
+    implementation(Libs.Androidx.ACTIVITY_KTX)
+    implementation(Libs.Androidx.FRAGMENT_KTX)
+    implementation(Libs.Androidx.Lifecycle.VIEW_MODEL_KTX)
+
     // coroutine
     implementation(Libs.Kotlinx.COROUTINES_ANDROID)
+
 
     // hilt
     implementation(Libs.Hilt.HILT)
