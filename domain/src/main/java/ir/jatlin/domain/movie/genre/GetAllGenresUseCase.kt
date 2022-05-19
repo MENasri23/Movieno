@@ -1,4 +1,4 @@
-package ir.jatlin.domain.movie
+package ir.jatlin.domain.movie.genre
 
 import ir.jatlin.core.data.repository.GenreRepository
 import ir.jatlin.model.movie.Genre
