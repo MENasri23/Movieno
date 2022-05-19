@@ -7,6 +7,7 @@ import ir.jatlin.data.repository.mapper.movie.asGenre
 import ir.jatlin.model.movie.Genre
 import ir.jatlin.webservice.model.movie.GenreDTO
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
@@ -16,8 +17,22 @@ class DefaultGenreRepository @Inject constructor(
     private val network: MovieRemoteDataSource
 ) : GenreRepository {
 
+    private var genres: List<Genre>? = null
+    private val mutex = Mutex()
+
+
+    private suspend fun fetchGenresList() = network.getAllGenres().genres
+        .map(GenreDTO::asGenre)
+        .also {
+            mutex.lock { genres = it }
+        }
+
     override suspend fun getAllGenres(): List<Genre> = withContext(dispatcher) {
-        val response = network.getAllGenres()
-        response.genres.map(GenreDTO::asGenre)
+        genres ?: fetchGenresList()
+    }
+
+    override suspend fun getGenreById(id: Int): Genre? {
+        val genres = genres ?: fetchGenresList()
+        return genres.firstOrNull { it.id == id }
     }
 }

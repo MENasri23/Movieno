@@ -4,7 +4,7 @@ import ir.jatlin.core.data.repository.GenreRepository
 import ir.jatlin.model.movie.Genre
 import javax.inject.Inject
 
-class GetAllGenres @Inject constructor(
+class GetAllGenresUseCase @Inject constructor(
     private val genreRepository: GenreRepository
 ) {
 
