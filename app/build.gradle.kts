@@ -70,6 +70,10 @@ dependencies {
     kapt(Libs.Hilt.HILT_COMPILER)
     kapt(Libs.Hilt.ANDROIDX_HILT_COMPILER)
 
+    // glide
+    implementation(Libs.Glide.GLIDE)
+    kapt(Libs.Glide.COMPILER)
+
     testImplementation(Libs.Test.JUNIT)
     androidTestImplementation(Libs.Androidx.Test.JUNIT_EXT)
     androidTestImplementation(Libs.Androidx.Test.ESPRESSO)
