@@ -1,6 +1,8 @@
 package ir.jatlin.data.source.remote
 
 import com.google.gson.Gson
+import ir.jatlin.data.source.remote.model.Error
+import ir.jatlin.data.source.remote.model.asError
 import ir.jatlin.webservice.model.response.NetworkError
 import retrofit2.Response
 import javax.inject.Inject
@@ -24,7 +26,7 @@ class ResponseConverter @Inject constructor(
             val errorBody = response.errorBody()
             val networkError = gson.fromJson(errorBody?.charStream(), NetworkError::class.java)
 
-            throw NetworkException(error = networkError)
+            throw NetworkException(error = networkError.asError())
         }
     }
 
@@ -33,4 +35,4 @@ class ResponseConverter @Inject constructor(
 
 class NoBodyException(msg: String? = null) : Exception(msg)
 
-class NetworkException(val error: NetworkError, msg: String? = null) : Exception(msg)
+class NetworkException(val error: Error, msg: String? = null) : Exception(msg)
