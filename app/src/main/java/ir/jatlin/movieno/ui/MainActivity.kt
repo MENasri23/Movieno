@@ -1,8 +1,9 @@
-package ir.jatlin.movieno
+package ir.jatlin.movieno.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import dagger.hilt.android.AndroidEntryPoint
+import ir.jatlin.movieno.R
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
