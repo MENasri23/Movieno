@@ -6,9 +6,9 @@ import ir.jatlin.model.movie.MovieDetails
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class GetMovieDetails @Inject constructor(
+class GetMovieDetailsUseCase @Inject constructor(
     private val movieRepository: MovieRepository
-) : FlowUseCase<GetMovieDetails.Params, MovieDetails>() {
+) : FlowUseCase<GetMovieDetailsUseCase.Params, MovieDetails>() {
 
     override fun execute(params: Params): Flow<MovieDetails> {
         return movieRepository.getMovieDetails(params.movieId)
